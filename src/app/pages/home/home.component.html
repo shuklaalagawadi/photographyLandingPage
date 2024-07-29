@@ -1,0 +1,49 @@
+<div class="banner">
+    <div class="content">
+     <h1 class="md-5">PHOTOGRAPHY</h1>
+        <h2>~ ...because every picture<br> 
+            tells a story</h2>
+    </div>
+</div>
+<!-- step  -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">How to capture  <span class="highlight">good clicks</span></h1>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h2>1</h2>
+                <p>Strike a Pose, No Regrets</p>
+            </div>
+        </div>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h2>2</h2>
+                <p>Frame It with Flair</p>
+            </div>
+        </div>
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h2>3</h2>
+                <p>Click, Snap, Slay</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- foodbox  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center"> Clicks of Brilliance</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
+            <div class="foodbox" *ngIf="i<=3">
+                <img src="{{fd.foodImg}}" />
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodPrice | currency:'INR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>

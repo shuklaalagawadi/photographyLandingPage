@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+:root
+{
+    --primary-color:#d0567d;
+    --secondary-color:#503C3C;
+}
+body
+{
+    height: 100vh;
+    font-family: "Merriweather", serif;
+    color: #B47B84;
+    font-weight: bold;
+}

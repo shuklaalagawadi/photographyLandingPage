@@ -1,0 +1,16 @@
+.navbar-light .navbar-nav .nav-link
+{
+    color: white !important;
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+a{
+    color: white;
+    transition: 1s all ease;
+}
+a:hover{
+    color:var(--primary-color);
+}
